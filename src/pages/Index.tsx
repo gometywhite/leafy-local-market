@@ -75,7 +75,7 @@ const Index = () => {
         {
           id: 'p4',
           name: 'Rainbow Carrots',
-          image: 'https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80',
+          image: 'https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80',
           price: 3.50,
           unit: 'bunch',
           organic: true,
@@ -86,7 +86,7 @@ const Index = () => {
         {
           id: 'p5',
           name: 'Microgreens Mix',
-          image: 'https://images.unsplash.com/photo-1550499891-d5e0e54c1795?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+          image: 'https://images.unsplash.com/photo-1550499891-d5e0e54c1795?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
           price: 5.00,
           unit: 'container',
           organic: true,
@@ -110,7 +110,7 @@ const Index = () => {
         {
           id: 'p6',
           name: 'Strawberries',
-          image: 'https://images.unsplash.com/photo-1518635017498-87f514b751ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80',
+          image: 'https://images.unsplash.com/photo-1518635017498-87f514b751ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80',
           price: 6.00,
           unit: 'pint',
           organic: true,
@@ -121,7 +121,7 @@ const Index = () => {
         {
           id: 'p7',
           name: 'Yellow Squash',
-          image: 'https://images.unsplash.com/photo-1598453572637-a6195a41c562?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+          image: 'https://images.unsplash.com/photo-1598453572637-a6195a41c562?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
           price: 2.50,
           unit: 'lb',
           organic: true,
@@ -163,7 +163,7 @@ const Index = () => {
     <div className="min-h-screen bg-cream">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Main Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
@@ -180,23 +180,6 @@ const Index = () => {
               <Button size="lg" variant="outline" className="border-green-DEFAULT text-green-DEFAULT hover:bg-green-lighter">
                 Become a Seller
               </Button>
-            </div>
-          </div>
-          <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
-            <img 
-              src="https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80" 
-              alt="Local garden produce" 
-              onError={(e) => {
-                console.error('Image load error in component', e);
-                e.currentTarget.src = "https://via.placeholder.com/1771x1000?text=Image+Not+Found";
-              }}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-              <div className="text-white">
-                <p className="font-semibold text-lg mb-1">Seasonal Highlights</p>
-                <p>Tomatoes, Zucchini, Berries, and Fresh Herbs are in season now</p>
-              </div>
             </div>
           </div>
         </div>
