@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Navbar } from "@/components/navbar";
 import { Map } from "@/components/ui/map";
@@ -41,7 +40,7 @@ const Index = () => {
         {
           id: 'p2',
           name: 'Fresh Basil',
-          image: 'https://images.unsplash.com/photo-1588899451640-9ea54c7734d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          image: 'https://images.unsplash.com/photo-1588899451640-9ea54c7734d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           price: 2.00,
           unit: 'bunch',
           organic: true,
@@ -52,7 +51,7 @@ const Index = () => {
         {
           id: 'p3',
           name: 'Bell Peppers',
-          image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80',
+          image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80',
           price: 3.25,
           unit: 'lb',
           organic: true,
@@ -135,9 +134,11 @@ const Index = () => {
   ];
 
   const featuredProducts = [
-    ...sellers[0].products,
-    ...sellers[1].products,
-    ...sellers[2].products,
+    sellers[0].products[0],  // Heirloom Tomatoes
+    sellers[1].products[0],  // Rainbow Carrots
+    sellers[1].products[1],  // Microgreens Mix
+    sellers[2].products[0],  // Strawberries
+    sellers[2].products[1],  // Yellow Squash
   ];
 
   const handleSellerSelect = (seller) => {
