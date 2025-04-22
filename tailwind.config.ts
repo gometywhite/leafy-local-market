@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				merriweather: ['Merriweather', 'serif'],
+				sans: ['Open Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +56,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// GreenThumb Marketplace custom colors
+				green: {
+					DEFAULT: '#2D6A4F',
+					light: '#52B788',
+					lighter: '#B7E4C7',
+				},
+				terracotta: '#CB997E',
+				cream: '#F8F9FA',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
