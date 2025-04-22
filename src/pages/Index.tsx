@@ -168,7 +168,7 @@ const Index = () => {
           </div>
           <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1526645417196-ad5009eee5fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80" 
+              src="https://images.unsplash.com/photo-1526645417196-ad5009eee5fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80" 
               alt="Local garden produce" 
               className="w-full h-full object-cover"
             />
