@@ -8,6 +8,7 @@ import { MobileAppPreview } from "@/components/mobile-app-preview";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Chatbox } from "@/components/chatbox";
+import { Leprechaun } from '@/components/Leprechaun';
 
 const Index = () => {
   const [selectedSeller, setSelectedSeller] = useState<any>(null);
@@ -382,6 +383,7 @@ const Index = () => {
         </div>
       </footer>
       <Chatbox />
+      <Leprechaun />
     </div>
   );
 };
