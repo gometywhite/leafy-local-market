@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from "@/components/navbar";
 import { Map } from "@/components/ui/map";
 import { SellerProfile } from "@/components/seller-profile";
@@ -143,6 +143,22 @@ const Index = () => {
     setSelectedSeller(seller);
   };
 
+  useEffect(() => {
+    const heroImage = new Image();
+    heroImage.src = "https://images.unsplash.com/photo-1526645417196-ad5009eee5fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80";
+    
+    heroImage.onload = () => {
+      console.log('Hero image loaded successfully');
+      console.log('Image naturalWidth:', heroImage.naturalWidth);
+      console.log('Image naturalHeight:', heroImage.naturalHeight);
+    };
+
+    heroImage.onerror = (error) => {
+      console.error('Hero image failed to load', error);
+      console.log('Image source:', heroImage.src);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-cream">
       <Navbar />
@@ -170,6 +186,10 @@ const Index = () => {
             <img 
               src="https://images.unsplash.com/photo-1526645417196-ad5009eee5fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80" 
               alt="Local garden produce" 
+              onError={(e) => {
+                console.error('Image load error in component', e);
+                e.currentTarget.src = "https://via.placeholder.com/1771x1000?text=Image+Not+Found";
+              }}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
