@@ -145,7 +145,7 @@ const Index = () => {
 
   useEffect(() => {
     const heroImage = new Image();
-    heroImage.src = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
+    heroImage.src = "https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80";
     
     heroImage.onload = () => {
       console.log('Hero image loaded successfully');
@@ -184,7 +184,7 @@ const Index = () => {
           </div>
           <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+              src="https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80" 
               alt="Local garden produce" 
               onError={(e) => {
                 console.error('Image load error in component', e);
