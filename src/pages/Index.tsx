@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Navbar } from "@/components/navbar";
 import { Map } from "@/components/ui/map";
@@ -8,6 +7,7 @@ import { EducationalContent } from "@/components/educational-content";
 import { MobileAppPreview } from "@/components/mobile-app-preview";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Chatbox } from "@/components/chatbox";
 
 const Index = () => {
   const [selectedSeller, setSelectedSeller] = useState<any>(null);
@@ -381,6 +381,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      <Chatbox />
     </div>
   );
 };
