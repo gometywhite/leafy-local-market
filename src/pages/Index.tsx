@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Navbar } from "@/components/navbar";
 import { Map } from "@/components/ui/map";
@@ -164,18 +165,18 @@ const Index = () => {
       <Navbar />
       
       {/* Main Content */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="font-merriweather text-4xl md:text-5xl font-bold text-green-DEFAULT leading-tight">
-              Fresh Local Produce From Your Neighbors
+      <section className="max-w-full w-full bg-green-lighter/20 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="font-merriweather text-5xl md:text-6xl font-bold text-green-DEFAULT leading-tight mb-6">
+              Fresh Local Produce, Straight from Neighborhood Gardens
             </h1>
-            <p className="mt-4 text-lg text-gray-600">
-              Connect with local gardeners and buy homegrown, seasonal produce directly from people in your neighborhood.
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-10">
+              Discover a vibrant community of local gardeners who are passionate about growing organic, sustainable produce. Buy fresh, seasonal fruits and vegetables directly from your neighbors, supporting local agriculture and enjoying the freshest ingredients possible.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="flex justify-center space-x-4">
               <Button size="lg" className="bg-green-DEFAULT hover:bg-green-light">
-                Find Local Produce
+                Explore Local Produce
               </Button>
               <Button size="lg" variant="outline" className="border-green-DEFAULT text-green-DEFAULT hover:bg-green-lighter">
                 Become a Seller
