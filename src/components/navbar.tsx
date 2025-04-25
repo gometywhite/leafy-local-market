@@ -11,7 +11,7 @@ const Navbar = () => {
       <div 
         className="w-full h-28 bg-cover bg-center" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/ae72533a-c62f-41e0-93ba-50572e0fe24b.jpeg')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80')",
           backgroundSize: 'cover'
         }}
       />
