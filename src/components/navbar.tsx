@@ -12,7 +12,8 @@ const Navbar = () => {
         className="w-full h-28 bg-cover bg-center" 
         style={{ 
           backgroundImage: "url('/lovable-uploads/4857c329-2986-460b-bcdd-936727f5aac5.png')",
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
         }}
       />
       <header className="bg-white shadow-sm">

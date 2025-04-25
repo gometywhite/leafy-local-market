@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Chatbox } from "@/components/chatbox";
 import { Leprechaun } from '@/components/Leprechaun';
+
 const Index = () => {
   const [selectedSeller, setSelectedSeller] = useState<any>(null);
 
@@ -26,7 +27,7 @@ const Index = () => {
     products: [{
       id: 'p1',
       name: 'Heirloom Tomatoes',
-      image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       price: 4.50,
       unit: 'lb',
       organic: true,
@@ -127,12 +128,14 @@ const Index = () => {
   // Strawberries
   sellers[2].products[1] // Yellow Squash
   ];
+
   const handleSellerSelect = seller => {
     setSelectedSeller(seller);
   };
+
   useEffect(() => {
     const heroImage = new Image();
-    heroImage.src = "https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80";
+    heroImage.src = "https://images.unsplash.com/photo-1518770660439-4636190af475";
     heroImage.onload = () => {
       console.log('Hero image loaded successfully');
       console.log('Image naturalWidth:', heroImage.naturalWidth);
@@ -143,6 +146,7 @@ const Index = () => {
       console.log('Image source:', heroImage.src);
     };
   }, []);
+
   return <div className="min-h-screen bg-cream">
       <Navbar />
       
@@ -151,9 +155,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center rounded-lg">
             <h1 className="font-merriweather text-5xl md:text-6xl font-bold text-green-DEFAULT leading-tight mb-6">Roso Foto plumbing 24 hrs a day</h1>
-            <p className="max-w-4xl mx-auto mb-10 text-violet-500 text-4xl">Discover a vibrant community of roy2k music loving producers
-
-          </p>
+            <p className="max-w-4xl mx-auto mb-10 text-violet-500 text-4xl">Discover a vibrant community of roy2k music loving producers</p>
             <div className="flex justify-center space-x-4">
               <Button size="lg" className="bg-green-DEFAULT hover:bg-green-light">
                 Explore Local Produce
@@ -345,4 +347,5 @@ const Index = () => {
       <Leprechaun />
     </div>;
 };
+
 export default Index;
