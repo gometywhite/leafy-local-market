@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Chatbox } from "@/components/chatbox";
 import { Leprechaun } from '@/components/Leprechaun';
-
 const Index = () => {
   const [selectedSeller, setSelectedSeller] = useState<any>(null);
 
@@ -118,7 +117,6 @@ const Index = () => {
       harvestedDate: 'Yesterday'
     }]
   }];
-  
   const featuredProducts = [sellers[0].products[0],
   // Heirloom Tomatoes
   sellers[1].products[0],
@@ -129,11 +127,9 @@ const Index = () => {
   // Strawberries
   sellers[2].products[1] // Yellow Squash
   ];
-
   const handleSellerSelect = seller => {
     setSelectedSeller(seller);
   };
-
   useEffect(() => {
     const heroImage = new Image();
     heroImage.src = "https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80";
@@ -147,7 +143,6 @@ const Index = () => {
       console.log('Image source:', heroImage.src);
     };
   }, []);
-
   return <div className="min-h-screen bg-cream">
       <Navbar />
       
@@ -155,9 +150,7 @@ const Index = () => {
       <section className="max-w-full w-full bg-green-lighter/20 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center rounded-lg">
-            <h1 className="font-merriweather text-5xl md:text-6xl font-bold text-green-DEFAULT leading-tight mb-6">
-              Fresh Local Produce, Straight from Neighborhood Gardens
-            </h1>
+            <h1 className="font-merriweather text-5xl md:text-6xl font-bold text-green-DEFAULT leading-tight mb-6">Roso Foto plumbing 24 hrs a day</h1>
             <p className="max-w-4xl mx-auto mb-10 text-violet-500 text-4xl">Discover a vibrant community of roy2k music loving producers
 
           </p>
@@ -352,5 +345,4 @@ const Index = () => {
       <Leprechaun />
     </div>;
 };
-
 export default Index;
