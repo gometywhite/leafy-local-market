@@ -153,9 +153,9 @@ const Index = () => {
             <h1 className="font-merriweather text-5xl md:text-6xl font-bold text-green-DEFAULT leading-tight mb-6">
               Fresh Local Produce, Straight from Neighborhood Gardens
             </h1>
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-10">
-              Discover a vibrant community of local gardeners who are passionate about growing organic, sustainable produce. Buy fresh, seasonal fruits and vegetables directly from your neighbors, supporting local agriculture and enjoying the freshest ingredients possible.
-            </p>
+            <p className="max-w-4xl mx-auto mb-10 text-violet-500 text-4xl">Discover a vibrant community of roy2k music loving producers
+
+          </p>
             <div className="flex justify-center space-x-4">
               <Button size="lg" className="bg-green-DEFAULT hover:bg-green-light">
                 Explore Local Produce
