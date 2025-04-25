@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Chatbox } from "@/components/chatbox";
 import { Leprechaun } from '@/components/Leprechaun';
+
 const Index = () => {
   const [selectedSeller, setSelectedSeller] = useState<any>(null);
 
@@ -77,7 +78,7 @@ const Index = () => {
     }, {
       id: 'p5',
       name: 'Microgreens Mix',
-      image: 'https://images.unsplash.com/photo-1550499891-d5e0e54c1795?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+      image: '/lovable-uploads/311ec952-4b09-4b4d-bc85-c2cf18e30a11.png',
       price: 5.00,
       unit: 'container',
       organic: true,
@@ -117,6 +118,7 @@ const Index = () => {
       harvestedDate: 'Yesterday'
     }]
   }];
+  
   const featuredProducts = [sellers[0].products[0],
   // Heirloom Tomatoes
   sellers[1].products[0],
@@ -127,9 +129,11 @@ const Index = () => {
   // Strawberries
   sellers[2].products[1] // Yellow Squash
   ];
+
   const handleSellerSelect = seller => {
     setSelectedSeller(seller);
   };
+
   useEffect(() => {
     const heroImage = new Image();
     heroImage.src = "https://images.unsplash.com/photo-1507464098501-1babb2fa9d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1771&q=80";
@@ -143,6 +147,7 @@ const Index = () => {
       console.log('Image source:', heroImage.src);
     };
   }, []);
+
   return <div className="min-h-screen bg-cream">
       <Navbar />
       
@@ -347,4 +352,5 @@ const Index = () => {
       <Leprechaun />
     </div>;
 };
+
 export default Index;
